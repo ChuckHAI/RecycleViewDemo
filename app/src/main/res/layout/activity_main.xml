@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="client.mimi.com.mimiclient.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/ll_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio1"
+            style="@style/tabTv"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_one_selector"
+            android:text="在线" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            style="@style/tabTv"
+            android:drawableTop="@drawable/tab_two_selector"
+            android:text="邀约" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            style="@style/tabTv"
+            android:drawableTop="@drawable/tab_three_selector"
+            android:text="动态" />
+
+        <RadioButton
+            android:id="@+id/radio4"
+            style="@style/tabTv"
+            android:drawableTop="@drawable/tab_four_selector"
+            android:text="我的" />
+
+    </RadioGroup>
+
+</LinearLayout>
