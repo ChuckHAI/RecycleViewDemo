@@ -5,7 +5,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 
 import client.mimi.com.mimiclient.R;
 
@@ -30,16 +29,18 @@ public class HomeOnLineAdapter extends RecyclerView.Adapter<HomeOnLineHolder> {
     @Override
     public void onBindViewHolder(HomeOnLineHolder holder, int position) {
         if (position == 0 || position == 2) {
-            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(holder.mImageView.getLayoutParams());
-            lp.setMargins(0, 100, 0, 0);
-            holder.mImageView.setLayoutParams(lp);
+//            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(holder.mImageView.getLayoutParams());
+//            lp.setMargins(10, 0, 0, 0);
+//            holder.mLayout.setLayoutParams(lp);
+            holder.mLayout.setPadding(100, 0, 10, 0);
         } else {
-            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(holder.mImageView.getLayoutParams());
-            lp.setMargins(0, 0, 0, 0);
-            holder.mImageView.setLayoutParams(lp);
+//            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(holder.mImageView.getLayoutParams());
+//            lp.setMargins(0, 0, 0, 0);
+//            holder.mLayout.setLayoutParams(lp);
+            holder.mLayout.setPadding(0, 0, 10, 0);
         }
 
-        holder.mTextView.setText(position + "风景");
+        holder.mTextView.setText(position + "选项");
     }
 
     @Override

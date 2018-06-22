@@ -3,6 +3,7 @@ package client.mimi.com.mimiclient.adapter;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import client.mimi.com.mimiclient.R;
@@ -15,6 +16,7 @@ public class HomeOnLineHolder extends RecyclerView.ViewHolder implements View.On
 
     public ImageView mImageView;
     public TextView mTextView;
+    public LinearLayout mLayout;
 
     private HomeOnLineAdapter.OnItemClickListener listener;
 
@@ -22,6 +24,7 @@ public class HomeOnLineHolder extends RecyclerView.ViewHolder implements View.On
         super(itemView);
         this.listener = listener;
         itemView.setOnClickListener(this);
+        mLayout = itemView.findViewById(R.id.layout);
         mImageView = itemView.findViewById(R.id.imageView);
         mTextView = itemView.findViewById(R.id.textView);
 

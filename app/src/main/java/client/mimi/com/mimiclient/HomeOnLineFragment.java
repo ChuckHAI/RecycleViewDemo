@@ -1,6 +1,5 @@
 package client.mimi.com.mimiclient;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -9,6 +8,7 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import client.mimi.com.mimiclient.adapter.HomeOnLineAdapter;
 
@@ -41,7 +41,7 @@ public class HomeOnLineFragment extends Fragment {
 
     private void initView(View view) {
         mRecyclerView = view.findViewById(R.id.recycler_view);
-        final StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL);
+        final StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.HORIZONTAL);
         layoutManager.setGapStrategy(StaggeredGridLayoutManager.GAP_HANDLING_NONE); //不设置的话，图片闪烁错位，有可能有整列错位的情况。
 
         mRecyclerView.setLayoutManager(layoutManager);
@@ -60,8 +60,8 @@ public class HomeOnLineFragment extends Fragment {
         adapter.setItemOnClick(new HomeOnLineAdapter.OnItemClickListener() {
             @Override
             public void ItemClick(View view, int position) {
-//                Toast.makeText(getActivity(), position + "", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getActivity(), WBShareActivity.class));
+                Toast.makeText(getActivity(), position + "", Toast.LENGTH_SHORT).show();
+//                startActivity(new Intent(getActivity(), WBShareActivity.class));
             }
         });
 
