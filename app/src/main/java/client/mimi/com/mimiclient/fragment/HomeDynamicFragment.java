@@ -1,4 +1,4 @@
-package client.mimi.com.mimiclient;
+package client.mimi.com.mimiclient.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import client.mimi.com.mimiclient.R;
 
 /**
  * Created by chuck on 2018/2/1.
@@ -26,7 +28,7 @@ public class HomeDynamicFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home_dynamic, container,false);
+        View view = inflater.inflate(R.layout.fragment_home_dynamic, container, false);
         Log.i("==========", 333333333 + "");
         return view;
     }

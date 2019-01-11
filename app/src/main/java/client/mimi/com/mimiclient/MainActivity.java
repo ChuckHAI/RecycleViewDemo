@@ -10,6 +10,10 @@ import android.widget.RadioGroup;
 
 import java.util.List;
 
+import client.mimi.com.mimiclient.fragment.HomeDynamicFragment;
+import client.mimi.com.mimiclient.fragment.HomeInvestFragment;
+import client.mimi.com.mimiclient.fragment.HomeMyInfoFragment;
+import client.mimi.com.mimiclient.fragment.HomeOnLineFragment;
 import client.mimi.com.mimiclient.util.AppInfoUtils;
 
 public class MainActivity extends FragmentActivity implements RadioGroup.OnCheckedChangeListener {
@@ -48,7 +52,6 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
 //        StatusBarUtil.setStatusBarLightMode(getWindow());
 
         setContentView(R.layout.activity_main);
-
         initViews();
     }
 

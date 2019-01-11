@@ -24,18 +24,7 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name="client.mimi.com.mimiclient.WBShareActivity"
-            android:configChanges="keyboardHidden|orientation"></activity>
-
-        <meta-data
-            android:name="WEIBO_APPKEY"
-            android:value="2883965763" />
-
-        <meta-data
-            android:name="WEIBO_CHANNEL"
-            android:value="7758" />
-
+        <activity android:name=".TestRxBusActivity"/>
 
     </application>
 

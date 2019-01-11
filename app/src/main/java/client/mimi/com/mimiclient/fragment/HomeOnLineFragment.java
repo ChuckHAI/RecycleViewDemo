@@ -1,4 +1,4 @@
-package client.mimi.com.mimiclient;
+package client.mimi.com.mimiclient.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import client.mimi.com.mimiclient.R;
 import client.mimi.com.mimiclient.adapter.HomeOnLineAdapter;
 
 /**
