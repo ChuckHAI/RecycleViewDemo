@@ -25,6 +25,7 @@
         </activity>
 
         <activity android:name=".TestRxBusActivity"/>
+        <activity android:name=".TestTitleBarActivity"/>
 
     </application>
 

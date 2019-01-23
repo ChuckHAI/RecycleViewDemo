@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import client.mimi.com.mimiclient.R;
 import client.mimi.com.mimiclient.TestRxBusActivity;
+import client.mimi.com.mimiclient.TestTitleBarActivity;
 import client.mimi.com.mimiclient.model.Student;
 import client.mimi.com.mimiclient.util.RxBus;
 import io.reactivex.disposables.Disposable;
@@ -36,6 +37,8 @@ public class HomeMyInfoFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home_my_info, container, false);
+        initRxBus();
+
         Button mBtnRxbus = view.findViewById(R.id.btnRxbus);
         mBtnRxbus.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,7 +47,15 @@ public class HomeMyInfoFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        initRxBus();
+
+        Button mBtnTitleBar = view.findViewById(R.id.btnTitleBar);
+        mBtnTitleBar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), TestTitleBarActivity.class);
+                startActivity(intent);
+            }
+        });
 
         return view;
     }

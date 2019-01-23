@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tltbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="#ABC123"
+        android:gravity="center"
+        android:text="昨日收益"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tltbar">
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tltbar">
+        <LinearLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dip"
+                android:background="#aabbcc"
+                android:text="昨日收益投资回报 8888元"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="#aafbcc"
+                android:gravity="center"
+                android:text="吸顶标题"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
